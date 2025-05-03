@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RedHatText;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 100px; */
+}
+
+.header_container {
+  padding-top: 50px;
+  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgb(235, 67, 6);
+}
+body {
+  background-color: rgb(252, 244, 236);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: bisque;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.products {
+  justify-content: space-between;
+    display: flex;
+  width: 70%;
+}
+
+.product_lists {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 30px;
+  justify-content: space-between;
+}
+
+.product_list-item {
+  width: 30%;
+  justify-content: space-between;
+}
+
+.product_list-tag {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 3px;
+  
+}
+.product_image-container {
+  width: 100%;
+  height: 225px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  
+}
+
+.product__list-item-flt-btn {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  width: 70%;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 1px solid rgb(235, 67, 6);
+  column-gap: 10px;
+  font-weight: 600;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+
+.product__list-item-flt-btn:hover {
+  background-color: rgb(235, 67, 6);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.product_list-name {
+  font-weight: 600;
+}
+
+.product_list-item-amount {
+  font-weight: 600;
+  color: rgb(235, 67, 6);
+}
+
+.product_list-tag {
+  color: rgb(104, 102, 104);
+}
+
+.cart-container {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    margin-top: -620px;
+    margin-left: 10px;
+  }
+  
+  .cart-title {
+    color: #d94710;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .cart-title span {
+    font-weight: 600;
+  }
+  
+  .cart-list {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .item-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .item-meta {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .item-qty {
+    font-weight: bold;
+    color: #d94710;
+  }
+  
+  .item-total {
+    margin-left: auto;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 16px 0;
+  }
+  
+  .total-amount {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  
+  .delivery-note {
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .confirm-btn {
+    width: 100%;
+    background: #d94710;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .confirm-btn:hover {
+    background: #c33d0c;
+  }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .product_list-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .products {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product_list-item {
+    width: 100%;
+  }
+
+  .cart-container {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_container {
+    font-size: 1.5rem;
+  }
+
+  .product_image-container {
+    height: 150px;
+  }
+
+  .product__list-item-flt-btn {
+    width: 90%;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .cart-container {
+    padding: 16px;
+  }
+
+  .confirm-btn {
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}
